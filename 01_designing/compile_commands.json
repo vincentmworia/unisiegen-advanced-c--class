@@ -1,0 +1,9 @@
+[{
+		"file":	"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\BDayCentre.cpp",
+		"directory":	"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing",
+		"command":	"C:/mingw64/bin/g++.exe -c \"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\BDayCentre.cpp\" -o \"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\BDayCentre.cpp\".o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\14.2.0 -IC:\\mingw64\\include\\c++\\14.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\14.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\14.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\14.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -I. -I.  -g -Wall"
+	}, {
+		"file":	"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\Birthday.cpp",
+		"directory":	"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing",
+		"command":	"C:/mingw64/bin/g++.exe -c \"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\Birthday.cpp\" -o \"G:\\My Drive\\1 EMINENT\\Semester 4 - Thesis SIEGEN\\Advanced C++\\01_designing\\Birthday.cpp\".o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\14.2.0 -IC:\\mingw64\\include\\c++\\14.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\14.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\14.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\14.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -I. -I.  -g -Wall"
+	}]
