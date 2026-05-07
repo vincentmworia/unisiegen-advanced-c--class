@@ -16,21 +16,19 @@
 #include <iostream>
 
 class Birthday {
- public:
-  static double run(int n) {  // probability .....
-    double p = 1.0;
-    for (int i = 2; i <= n; i++ ) {
-      p = p * (366.0 - i)/365.0;
+public:
+    static double run(const int n) {
+        double p = 1.0;
+        for (int i = 2; i <= n; i++) {
+            p = p * (366.0 - i) / 365.0;
+        }
+        return 1.0 - p;
     }
-    return 1.0 - p;
-  }
 };
 
 int main() {
-  constexpr int n = 60;
-  std::cout << "the probability of at least 2 in a group of " << n << " people ";
-  std::cout << " having the same birthday is: " << Birthday::run(n) << ".\n";
-  return 0;
+    constexpr int n = 60;
+    std::cout << "the probability of at least 2 in a group of " << n << " people ";
+    std::cout << " having the same birthday is: " << Birthday::run(n) << ".\n";
+    return 0;
 }
-
-
