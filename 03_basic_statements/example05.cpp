@@ -3,10 +3,20 @@
  Remember: A number is a prime when any division by a smaller number results in
  a remainder that is never zero.
 */
-#include <iostream>  // to allow use of std::cout
-int main( ) {
+#include <iostream>
 
 
-
-
+int main() {
+    for (int number = 3; number <= 99; number++) {
+        bool isPrime = true;
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            std::cout << number << std::endl;
+        }
+    }
 }

@@ -8,8 +8,8 @@
                 X  X            X X
                                X   X      */
 #include <iostream>  // to allow use of std::cout and std::endl
-int main( ) {
 
-
+int main() {
+    constexpr auto size = 4;
 
 }

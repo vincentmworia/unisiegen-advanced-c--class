@@ -4,8 +4,11 @@
   smaller than 43.7
   */
 #include <iostream>  // to allow use of std::cout and std::endl
-int main( ) {
 
-
-
+int main() {
+    float number = 120.0f;
+    while (number > 43.7f) {
+        std::cout << number << std::endl;
+        number -= 7.0f;
+    }
 }
