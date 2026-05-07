@@ -3,7 +3,7 @@
   <component name="CMakePythonSetting">
     <option name="pythonIntegrationState" value="YES" />
   </component>
-  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/01_designing">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/03_basic_statements">
     <contentRoot DIR="$PROJECT_DIR$" />
   </component>
 </project>
