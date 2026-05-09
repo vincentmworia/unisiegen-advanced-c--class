@@ -1,4 +1,4 @@
-/**
+/*
 Draw X algorithm
 Author: Vincent Mwenda Mworia   Date: 08 May 2026
 
@@ -10,26 +10,26 @@ Write a program that draws in the terminal a bigger X out of the character 'X',
    X XX          XXX             XX
                 X  XX           X XX
                                X   XX
-
-Stochastics:
+    Stochastics:
     The left "\" diagonal happens when row==column
-    Add one more X per row, when row+1==column
     The right "/" diagonal happens when row+column==size-1
-
-*/
-#include <iostream>  // to allow use of std::cout and std::endl
+    The neighbors of the left diagonal happen when row+1==column
+    */
+#include <iostream>
 
 int main() {
-    constexpr int8_t size = 3;
-
+    constexpr auto size = 4;
+ 
     for (int row = 0; row < size; row++) {
-        for (int col = 0; col < size; col++) {
-            if ((row == col) || ((row + 1) == col) || ((row + col) == (size - 1))) {
-                std::cout << "X";
-            } else {
-                std::cout << " ";
-            }
+        for (int col = 0; col <= size; col++) {
+            // Left diagonal + neighbor OR Right diagonal + neighbor
+            if (row == col || row + 1 == col ||((row + col == size -1) &&(row>=size/2)) ||((row + col == size) &&(row<size/2))) {
+            std::cout << "X";
+        } else {
+            std::cout << " ";
         }
-        std::cout << std::endl;
+    }
+    std::cout << std::endl;
     }
 }
+

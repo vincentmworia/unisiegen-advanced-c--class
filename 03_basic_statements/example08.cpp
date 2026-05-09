@@ -16,17 +16,14 @@ int main( ) {
 
   auto size = 15;
 
-  auto n = size - 1;
-
-  for (auto y = 0; y <= n; y++) {
-    for (auto x = 0; x <= n; x++) {
-      if ( (x == 0) || (x == n) || (x == y) ) {
+  for (auto row = 0; row < size; row++) {
+    for (auto col = 0; col < size; col++) {
+      if ( (col == 0) || (col == size - 1) || (col == row) ) {
         std::cout << '0';
       } else {
-   	  std::cout << ' ';
+  	  std::cout << ' ';
       }
     }
     std::cout << '\n';
   }
-
-}
+} 
