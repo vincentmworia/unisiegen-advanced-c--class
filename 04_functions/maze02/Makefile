@@ -1,10 +1,18 @@
-# Rule to make our program when
-# ’drawMaze.o’ and ’maze.o’ are compiled:
+# Define variables at the top
+CXX = g++
+CXXFLAGS = -std=c++11 -g
+LIBS = -l ncurses
+ 
+run: maze
+	./maze
+	rm -f *.o
+
 maze: drawMaze.o maze.o
-	g++ drawMaze.o maze.o -o maze -lncurses
-# Rule for dependency 'maze.o':
+	$(CXX) drawMaze.o maze.o -o maze $(LIBS)
+
 maze.o: maze.cpp drawMaze.h
-	g++ -c maze.cpp -std=c++11
-# Rule for dependency 'drawMaze.o':
+	$(CXX) -c maze.cpp $(CXXFLAGS)
+
 drawMaze.o: drawMaze.cpp drawMaze.h
-	g++ -c drawMaze.cpp -std=c++11
+	$(CXX) -c drawMaze.cpp $(CXXFLAGS)
+ 

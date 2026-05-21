@@ -13,6 +13,24 @@
 #include <iostream>
 
 // enter your function here:
+void fizzbuzz(int start) {
+    for (int i = 0; i < 100; i++) {
+        int current = start + i;
+
+        if (current % 3 == 0 && current % 5 == 0) {
+            std::cout << "fizzbuzz\n";
+        } 
+        else if (current % 3 == 0) {
+            std::cout << "fizz\n";
+        } 
+        else if (current % 5 == 0) {
+            std::cout << "buzz\n";
+        } 
+        else {
+            std::cout << current << "\n";
+        }
+    }
+}
 
 
 int main() {

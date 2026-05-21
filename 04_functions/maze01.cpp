@@ -24,10 +24,10 @@ void clearScreen() {
 }
 
 // draw a symbol at (x,y) with color colorpair
-void draw(int x, int y, char symbol, int colorpair) {
-  attron(COLOR_PAIR(colorpair)); // set color pair to 1
+void draw(int x, int y, char symbol) {
+  attron(COLOR_PAIR(2)); // set color pair to 1
   mvaddch(y, x, symbol);         // ncurses function: draw '.' at (x,y)
-  attroff(COLOR_PAIR(colorpair));
+  attroff(COLOR_PAIR(2));
 }
 
 int main() {
@@ -36,7 +36,7 @@ int main() {
   initNCurses();       // initialize ncurses functionality
   while (c != 'q') {   // as long as the user doesn't press q ..
     clearScreen();
-    draw(x, y, '@', 2); // draw our player
+    draw(x, y, '@'); // draw our player
     c = getch();        // capture the user's pressed key
     switch (c) {
     case 'w':
